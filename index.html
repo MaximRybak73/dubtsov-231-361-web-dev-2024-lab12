@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page с Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section, .contact-section {
+            background-color: #007bff; /* Синий фон */
+            color: white;
+            padding: 60px 20px;
+        }
+        .features-section {
+            background-color: #f8f9fa; /* Белый фон */
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Блок с названием проекта -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Инновационная прикормка от DUNAEV</h1>
+            <p class="lead text-center">Dunaev Feeder Series - результата работы одного из лидеров российского производства - ИП Дунаева. Эта серия, как понятно из ее названия, была разработана по оригинальной рецептуре профессионального российского рыболова Алексея Фадеева, практикующего донную ловлю нехищных рыб, совместно с чемпионом России Александром Дунаевым.</p>
+            <img src="прикормка.webp" alt="Изображение проекта" class="img-fluid rounded my-2" style="max-width: 350px;">
+        </div>
+    </section>
+
+    <!-- Блок с перечислением основных особенностей -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Основные особенности</h2>
+            <div class="row">
+                <!-- Карточка особенности -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Польностью натуральные компоненты!</h5>
+                            <p class="card-text">Два вида аминокислот, несколько видов панировочных сухарей, бисквит, кукуруза, семена льна (натуральный аттрактант для леща), семена кунжута, меласса, полента, соевая мука, коноплю, копра (жмых мякоти кокосового ореха), арахис, рыбная мука,  соль, сахарный песок.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка особенности -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Большой срок годности!</h5>
+                            <p class="card-text">Срок годности прикормки в запечатанном пакете - 2 года. Этого времени вполне хватит, чтобы использовать купленный запас. Дата изготовления пробита на верхнем сварном шве упаковки.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка особенности -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Натуральный аттрактант для леща!</h5>
+                            <p class="card-text">В прикормке используются семена льна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с формой обратной связи и контактами -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+            <div class="row">
+                <!-- Форма обратной связи -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Введите ваш e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Ваше сообщение</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Отправить</button>
+                    </form>
+                </div>
+                <!-- Контактные данные -->
+                <div class="col-md-6 text-center text-md-end mt-4 mt-md-0">
+                    <p>Телефон:</p>
+                    <p><a href="tel:+89639117097" class="text-white text-decoration-none">
+                        <i class="bi bi-telephone"></i> +8 (963) 911 70 97
+                    </a></p>
+                    <p>Почта:</p>
+                    <p><a href="mailto:rybolovclub73@mail.com" class="text-white text-decoration-none">
+                        <i class="bi bi-envelope"></i> rybolovclub73@mail.com
+                    </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
